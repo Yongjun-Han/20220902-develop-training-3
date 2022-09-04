@@ -10,42 +10,6 @@ domstyle.position(root, "relative")
 // header 박스 내부의 메뉴 글자 & 스타일링
 const header = document.createElement("div");
 root.appendChild(header);
-header.id = "header";
-
-function tagMakestyle(tagName,props) {  
-    
-    let tag = document.createElement(tagName);
-    for(const cssValue in props) {
-      tag.style[cssValue] = props[cssValue]
-    }
-    parent.appendChild(tag)
-  
-    tagMakestyle("div",{
-      width:"100vw",
-      height : "5vh",
-      display : "flex",
-      justifyContent : "center",
-      alignItems : "center"
-    })
-}
-
-function tagMaker(parent,tagName) {  
-  
-  for(let i=0; i<trainingData.header.length; i++) {
-    
-    let tag = document.getElementById(parent);
-    tag.innerHTML = trainingData.header[i];
-    tagName.appendChild(tag)
-  }
-}
-tagMaker("header","p")
-
-
-
-
-
-
-
 
 //header 아래 바 
 
